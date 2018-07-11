@@ -1,28 +1,3 @@
-<h1> CAT <%= @cat.name %> </h1>
+<h1>THIS CAT</h1>
 
-  <ul>
-    <li> <%= @cat.name %> </li>
-    <li> <%= @cat.birth_date %> </li>
-    <li> <%= @cat.color %> </li>
-    <li> <%= @cat.sex %> </li>
-  </ul>
-  <p> <%= @cat.description %> </p>
-
-  <table>
-    <thead>
-      <tr>
-        <th> Name </th>
-        <th> Birth Date</th>
-        <th> Color </th>
-        <th> Sex </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> <%= @cat.name %> </td>
-        <td> <%= @cat.birth_date %> </td>
-        <td> <%= @cat.color %> </td>
-        <td> <%= @cat.sex %> </td>
-      </tr>
-    </tbody>
-  </table>
+<%= render @cat, action: :show %>

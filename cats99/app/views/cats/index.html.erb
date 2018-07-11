@@ -1,12 +1,8 @@
 <h1> ALL THE CATS!!!! </h1>
 
+<a href="<%= new_cat_url %>"><button type="button" name="button">Make a new cat</button></a>
+<br><br>
+<%= render @cats, action: :index %>
 
-<% @cats.each do |cat|%>
-  <ul>
-    <li> <%= cat.name %> </li>
-    <li> <%= cat.birth_date %> </li>
-    <li> <%= cat.color %> </li>
-    <li> <%= cat.sex %> </li>
-  </ul>
-  <p> <%= cat.description %> </p>
-<% end %>
+
+
